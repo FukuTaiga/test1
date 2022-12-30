@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charesrt="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>間違い探し！</title>
+
+<link rel="stylesheet"href="mystyle.css">
+
+<style>
+    .parent ul{
+      display: none;
+    }
+    .active {
+      background-color: rgb(172, 228, 244);
+    }
+    .active ul {
+      display: block;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+    <h1><font color=#000000>間違い探し！</font></h1>
+</header>
+<main>
+    <h2>
+        <a href="https://fukutaiga.github.io/test1/" target="_blank">拡張現実起動</a>
+    </h2>
+</main>
+
+<ul>
+    <li class="parent" onclick="func1(this)">回答と解説
+      <ul>
+        <li>回答｛｝</li>
+        <li>解説｛スマート農業はお年寄りの農家さんやまだまだ初心者の農家さんを助けるための技術なんだ！｝</li>
+      </ul>
+    </li>
+    <li class="parent" onclick="func1(this)">次の問題へ
+      <ul>
+        <li>つぎのURL</li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+    function func1(e) {
+      e.classList.toggle("active");
+    }
+  </script>
+
+<footer>
+        近畿大学工学部情報学科教育情報システム研究室
+</footer>
+</body>
+</html>
